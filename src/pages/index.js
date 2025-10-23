@@ -7,7 +7,7 @@ export default function Home() {
         <img className="itachi" src="/images/itachi-uchiha-naruto-amoled-black-background-minimal-art-3840x2160-6478.jpg"/>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/CGyEd0aKWZE?si=O3s69_Vd5LjzD2Tj"></iframe>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/BS46C2z5lVE?si=TFgIGA3HhPXOOJHm"></iframe>
-
+<iframe width="853" height="480" src="https://www.youtube.com/embed/6N2dLghOMro"></iframe>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/7RUylQDHQMk"></iframe>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/A-NQaCzzk4o"></iframe>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/q0xc49VGrGc"></iframe>
