@@ -4,17 +4,23 @@ import { HiMenuAlt3 } from 'react-icons/hi';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
   const handleNav = () => {
     setNav(!nav);
-    if(!nav) {
-        document.body.style.overflow = 'hidden'
+    if (!nav) {
+      document.body.style.overflow = 'hidden';
     } else {
-        document.body.style.overflow = 'scroll'
+      document.body.style.overflow = 'scroll';
     }
   };
 
+  const handleLinkClick = () => {
+    setNav(false);
+    document.body.style.overflow = 'scroll';
+  };
+
   return (
-    <div className='absolute w-full flex justify-between p-4 items-center'>
+    <div className='fixed w-full flex justify-between p-4 items-center z-30'>
       <h1 className='text-white font-bold text-2xl z-20'>Itachi Ucicha</h1>
       <HiMenuAlt3 onClick={handleNav} className='z-20 text-white cursor-pointer' size={25} />
       <div
@@ -25,16 +31,15 @@ const Navbar = () => {
         }
       >
         <ul className='flex flex-col fixed w-full h-full items-center justify-center'>
-<Link href="/">
-  <li className="font-bold text-3xl p-8">Home</li>
-</Link>          
-<Link href="/courses">
-  <li className="font-bold text-3xl p-8">Courses</li>
-</Link> 
-<Link href="/music/music">
-  <li className="font-bold text-3xl p-8">Music</li>
-</Link>      
-          
+          <Link href="/" onClick={handleLinkClick}>
+            <li className="font-bold text-3xl p-8">Home</li>
+          </Link>
+          <Link href="/courses" onClick={handleLinkClick}>
+            <li className="font-bold text-3xl p-8">Courses</li>
+          </Link>
+          <Link href="/music/music" onClick={handleLinkClick}>
+            <li className="font-bold text-3xl p-8">Music</li>
+          </Link>
         </ul>
       </div>
     </div>
