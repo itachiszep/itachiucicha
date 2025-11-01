@@ -34,11 +34,14 @@ const Navbar = () => {
           <Link href="/" onClick={handleLinkClick}>
             <li className="font-bold text-3xl p-8">Home</li>
           </Link>
-          <Link href="/courses" onClick={handleLinkClick}>
-            <li className="font-bold text-3xl p-8">Courses</li>
-          </Link>
           <Link href="/music/music" onClick={handleLinkClick}>
             <li className="font-bold text-3xl p-8">Music</li>
+          </Link>
+          <Link href="/courses" onClick={handleLinkClick}>
+            <li className="font-bold text-3xl p-8">Mission</li>
+          </Link>
+          <Link href="/courses" onClick={handleLinkClick}>
+            <li className="font-bold text-3xl p-8">Courses</li>
           </Link>
         </ul>
       </div>
