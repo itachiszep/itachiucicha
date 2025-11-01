@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link href="/mission/mission" onClick={handleLinkClick}>
             <li className="font-bold text-3xl p-8">Mission</li>
           </Link>
-          <Link href="/courses" onClick={handleLinkClick}>
+          <Link href="/courses/courses" onClick={handleLinkClick}>
             <li className="font-bold text-3xl p-8">Courses</li>
           </Link>
         </ul>
